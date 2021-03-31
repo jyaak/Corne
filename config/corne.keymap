@@ -27,10 +27,10 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |     | ESC |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL  |
-// |     | TAB | LEFT| DOWN| UP  |RIGHT|   | VOLU| LFT | DWN |  UP | RGT | BSPC |
-// |     | RSE |     | MPRV|PLAY | MNXT|   | VOLD| PREV| PLY | NXT |     |      |
-//                   | GUI |     | SPC |   | ENT |     | ALT |
+// |     | ESC |  2  |  3  |  4  |  5  |   |  7  |  8  |  9  |  *  |  '  |      |
+// |     | TAB | LEFT| DOWN| UP  |RIGHT|   |  4  |  5  |  6  |  +  | BSPC|      |
+// |     | RSE |     | MPRV|PLAY | MNXT|   |  1  |  2  |  3  |  -  |RCTRL|      |
+//                   | GUI |     | SPC |   |  0  |  .  | ENT |
                         bindings = <
    &trans   &kp ESC   &kp N2    &kp N3     &kp C_VOL_DN &kp C_VOL_UP        &kp N7   &kp N8   &kp N9    &kp KP_MULTIPLY  &kp SQT   &trans
    &trans   &kp TAB   &kp LEFT  &kp DOWN   &kp UP       &kp RIGHT           &kp N4   &kp N5   &kp N6    &kp KP_PLUS      &kp BSPC  &trans
@@ -41,15 +41,15 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |  -  |  =  |  {  |  }  | "|" |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |  ~   | // TODO: Fix this row when &mkp is committed
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |      |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL  |
+// |      |BTCLR| BT1 | BT2 | BT3 | BT4 |   |  -  |  =  |  {  |  }  | "|" |  `   |
+// |      |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |  ~   | // TODO: Fix this row when &mkp is committed
+//                    | GUI |     | SPC |   | ENT |     | RGUI|
                         bindings = <
-   &kp  ESC   &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT         &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp PIPE &kp GRAVE
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans            &kp UNDER &kp PLUS  &trans          &trans   &kp BSLH &kp TILDE
-                                        &kp LGUI &trans &kp SPACE                   &kp RET &trans &kp RALT
+   &trans     &kp EXCL   &kp AT       &kp HASH     &kp DLLR     &kp PRCNT         &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp DEL
+   &trans     &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp PIPE &kp GRAVE
+   &trans     &trans     &trans       &trans       &trans       &trans            &kp UNDER &kp PLUS  &trans          &trans   &kp BSLH &kp TILDE
+                                         &kp LGUI &trans &kp SPACE                   &kp RET &trans &kp RGUI
                         >;
                 };
         };
