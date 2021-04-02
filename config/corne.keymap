@@ -33,28 +33,28 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// | ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | ' |
-// | TAB |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | BSPC|
-// | RSE |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RCTRL|
-//                    | ALT | SHIFT | LWR |   | SPC | ENT  | GUI |
+// |     |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | ' |
+// |     |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | BSPC|
+// |     |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RCTRL|
+//                    | RSE| TAB | LWR |   | SPC | BSPC | ENT |
                         bindings = <
-   &kp ESC &kp Q       &kp W       &kp E       &kp R       &kp T      &kp Y &kp U       &kp I         &kp O       &kp P          &kp SQT
-   &kp TAB &kp A       &hm RALT S  &hm RCTRL D &hm RSHFT F &kp G      &kp H &hm LSHFT J &hm LCTRL K   &hm LALT L &kp SEMI &kp BSPC
-   &mo 2   &kp Z       &kp X       &kp C       &kp V       &kp B      &kp N &kp M       &kp COMMA     &kp DOT     &kp FSLH       &kp RCTRL
-                                            &mo 2 &kp TAB &mo 1           &kp SPACE &kp BSPC &kp RET
+   &trans &kp Q    &kp W       &kp E       &kp R       &kp T      &kp Y &kp U       &kp I         &kp O       &kp P        &kp SQT
+   &trans &kp A    &hm RALT S  &hm RCTRL D &hm RSHFT F &kp G      &kp H &hm LSHFT J &hm LCTRL K   &hm LALT L &kp SEMI      &kp BSPC
+   &trans &kp Z    &kp X       &kp C       &kp V       &kp B      &kp N &kp M       &kp COMMA     &kp DOT     &kp FSLH     &kp RCTRL
+                                            &mo 2 &kp TAB &mo 1     &kp SPACE &kp BSPC &kp RET
                         >;
                 };
                 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL  |
-// | VOLU | LFT | DWN |  UP | RGT |VOLU |   | VOLU| LFT | DWN |  UP | RGT | BSPC |
-// | SHFT |     |     |     |     |VOLD |   | VOLD| PREV| PLY | NXT |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |      | ESC |  2  |  3  |  4  |  5  |   |  7  |  8  |  9  |  0  | SQT |     |
+// |      | LFT | DWN |  UP | RGT |VOLU |   |  4  |  5  |  6  |     | RGT |     |
+// |      |     |PREV | PLAY|NEXT |VOLD |   |  1  |  2  |  3  |     | DEL |     |
+//                    | GUI |     | SPC |   |  0  |     | ALT |
                         bindings = <
-   &kp ESC    &kp N1    &kp N2      &kp N3    &kp N4       &kp N5            &kp N7     &kp N8    &kp N9  &kp N0     &kp SQT   &kp DEL
-   &trans     &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT    &kp C_VOL_UP      &kp N4     &kp N5    &kp N6  &trans     &kp BSPC  &kp BSPC
-   &kp LSHFT  &trans    &kp C_PREV  &kp C_PP  &kp C_NEXT   &kp C_VOL_DN      &kp N1     &kp N2    &kp N3  &trans     &trans    &trans
+   &trans   &kp ESC    &kp N2      &kp N3    &kp N4       &kp N5           &kp N7     &kp N8    &kp N9  &kp N0    &kp SQT   &trans
+   &trans   &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT    &kp C_VOL_UP      &kp N4     &kp N5    &kp N6  &trans     &kp BSPC  &trans
+   &trans   &trans    &kp C_PREV  &kp C_PP  &kp C_NEXT   &kp C_VOL_DN      &kp N1     &kp N2    &kp N3  &trans     &DEL      &trans
                                         &kp LGUI     &trans     &kp SPACE     &kp N0    &trans     &kp RALT
                         >;
                 };
