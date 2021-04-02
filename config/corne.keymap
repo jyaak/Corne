@@ -33,9 +33,9 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |     |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | ' |
-// |     |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | BSPC|
-// |     |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RCTRL|
+// |  A  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | ' |
+// |  A  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | BSPC|
+// |  A  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RCTRL|
 //                    | RSE| TAB | LWR |   | SPC | BSPC | ENT |
                         bindings = <
    &kp A &kp Q    &kp W       &kp E       &kp R       &kp T      &kp Y &kp U       &kp I         &kp O       &kp P        &kp SQT
