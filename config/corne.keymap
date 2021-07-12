@@ -33,7 +33,7 @@
 //                   | GUI |     | SPC |   |  0  |  .  | ENT |
                         bindings = <
    &trans   &kp P     &kp O   &kp I     &kp U    &kp Y        &kp N7   &kp N8   &kp N9    &kp KP_MULTIPLY  &kp SQT   &trans
-   &trans   &kp :     &kp L   &kp K     &kp J    &kp H           &kp N4   &kp N5   &kp N6    &kp KP_PLUS      &kp BSPC  &trans
+   &trans   &kp SEMI  &kp L   &kp K     &kp J    &kp H           &kp N4   &kp N5   &kp N6    &kp KP_PLUS      &kp BSPC  &trans
    &trans   &mo FSLH  &kp DOT &kp COMMA &kp M    &kp N          &kp N1   &kp N2   &kp N3    &kp KP_MINUS     &kp RCTRL &trans
                                 &kp LGUI   &trans       &kp SPACE           &kp N0   &kp DOT  &kp RET
                         >;
