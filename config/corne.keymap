@@ -22,7 +22,7 @@
    &none &kp RGUI          &kp C_PP         &kp N9  &kp N8   &kp N7       &kp N7       &kp N8  &kp N9  &kp C_PP        &kp RGUI       &trans
    &none &kp C_VOL_DN      &kp C_VOL_UP     &kp N6  &kp N5   &kp N4       &kp N4       &kp N5  &kp N6  &kp C_VOL_UP    &kp C_VOL_DN   &trans
    &none &kp RC(RG(RIGHT)) &kp LG(LC(LEFT)) &kp N3  &kp N2   &kp N1       &kp N1           &kp N2  &kp N3  &kp LG(LC(LEFT))    &kp RC(RG(RIGHT))  &trans
-                 &mo 2 &mo 1   &kp SPACE                                                  &kp RET &kp N0  &kp DOT
+                 &kp DOT &kp N0   &kp RET                                                 &kp RET &kp N0  &kp DOT
                         >; 
                 };
                 lower_layer {
